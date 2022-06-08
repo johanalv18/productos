@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cards.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="slide-container"><br><br><br>
+        <form>
+            <input id="inputProducto" class="form-control" type="text" placeholder="Producto" style="color: aliceblue;">
+            <button id="botonProducto" type="submit" class="btn btn-primary">Enviar</button>
+            
+        </form>
+
+        <div class="wrapper">
+
+            
+            <div class="clash-card__image clash-card__image--barbarian productoContainer container"><br>
+                <h3 id="nombreProducto"></h3>
+
+                <div>
+                    <img id="productoImagen" src="" alt="nose" style="width: 30%; height: 30%;">
+                </div>
+
+                
+                <p id="descripcionProducto"></p>
+
+                <p id="precioProducto">$</p>
+
+                <p id="categoriaProducto">$</p>
+            </div>
+
+
+            <div class="container"> 
+                <form>
+                    <input id="inputNomb" class="form-control" type="text" placeholder="Nombre" style="color: aliceblue;">
+                    <input id="inputDesc" class="form-control" type="text" placeholder="Descripcion" style="color: aliceblue;">
+                    <input id="inputPrecio" class="form-control" type="text" placeholder="Precio" style="color: aliceblue;">
+                    <input id="inputCat" class="form-control" type="text" placeholder="Categoria" style="color: aliceblue;">
+                    <button id="crearProd" type="submit" class="btn btn-primary" onclick="crearProd()">Crear</button>
+                    
+                </form> 
+                <button id="botonAñadirProd" type="submit" class="btn btn-primary" onclick="añadirProducto()">Añadir Producto</button>
+                <button id="botonAcutalizarProd" type="submit" class="btn btn-primary" onclick="actualizarProducto()">Actualizar Producto</button>
+                <button id="botonEliminarProd" type="submit" class="btn btn-primary" onclick="eliminarProducto()">Eliminar Producto</button>
+            </div>
+
+            <div>
+                <h3>Listar Productos</h3>
+                <form>
+                    <input id="inputListarProd" class="form-control" type="text" placeholder="Producto" style="color: aliceblue;">
+                    <button id="botonListarProd" type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+        
+                <table>
+                    <thead>
+                        <th id="titulo">Nombre: </th>
+                        <th id="precio">Precio: </th>
+                        <th id="categoria">Categoria: </th>
+                    </thead>
+                    <tbody>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- end wrapper -->
+
+
+    </div> <!-- end container -->
+
+    <script src="productos.js"></script>
+</body>
+
+</html>
